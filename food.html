@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(./Background2.png);
+            background-size: cover;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            padding: 0px 100px 0px 50px;
+            gap: 10px;
+            height: 70px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .links{
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            font-weight: 600;
+        }
+        .links li{
+            font-size: 19px;
+            color: orange;
+        }
+        .logo{
+            color: orange;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .nav-1{
+            display: flex;
+            align-items: center;
+            gap: 120px;
+        }
+        .icon{
+            display: flex;
+            gap: 30px;
+        }
+        .icon i{
+            font-size: 25px;
+            color: black;
+        }
+        .hero{
+            display: flex;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            padding-left: 240px;
+            align-items: start;
+        }
+        .left1{
+            font-size: 30px;
+            font-style: italic;
+        }
+        .left2{
+            font-size: 85px;
+            font-weight: 600;
+        }
+        .left3{
+            font-size: 27px;
+            font-style:italic ;
+            color: orange;
+            margin-bottom: 15px;
+        }
+        .left4{
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 30px;
+        }
+        .hero{
+            display: flex;
+            align-items: center;
+            gap: 150px;
+            margin-top: 70px;
+        }
+        .food{
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        .items{
+            display: flex;
+            padding-left: 150px;
+            margin-top: -50px;
+            gap: 20px;
+        }
+        #food{
+            background: url(./food.png);
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+        }
+        #food1,#food2,#food3,#food4{
+            border: 2px solid white;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        #food1{
+            background: url(./food1.png);
+            background-size: cover;
+        }
+         #food2{
+            background: url(./food2.png);
+            background-size: cover;
+        }
+         #food3{
+            background: url(./food3.png);
+            background-size: cover;
+        }
+         #food4{
+            background: url(./food4.png);
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-1">
+                <div class="logo">CollageResto</div>
+            <ul class="links">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Location</li>
+                <li>Contact</li>
+            </ul>
+            </div>
+             <div class="icon">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+             <span class="left1">Are You Hungry?</span>
+             <span class="left2">Don't Wait</span>
+             <span class="left3">Let start to order food now</span>
+             <span class="left4">check out Menu</span>
+            </div>
+            <div class="food" id="food">
+                             
+            </div>
+        </div>
+        <div class="items">
+            <div id="food1"></div>
+            <div id="food2"></div>
+            <div id="food3"></div>
+            <div id="food4"></div>
+        </div>
+    </div>
+    <script>
+        let food=document.getElementById("food")
+        let food1=document.getElementById("food1")
+        let food2=document.getElementById("food2")
+        let food3=document.getElementById("food3")
+        let food4=document.getElementById("food4")
+
+        food1.addEventListener('click',()=>{
+           food.style.backgroundImage="url('./food1.png')"
+        })
+          food2.addEventListener('click',()=>{
+           food.style.backgroundImage="url('./food2.png')"
+        })
+          food3.addEventListener('click',()=>{
+           food.style.backgroundImage="url('./food3.png')"
+        })
+          food4.addEventListener('click',()=>{
+           food.style.backgroundImage="url('./food4.png')"
+        })
+    </script>
+</body>
+</html>
